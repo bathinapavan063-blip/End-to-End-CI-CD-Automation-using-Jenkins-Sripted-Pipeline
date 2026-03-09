@@ -21,7 +21,7 @@ pipeline{
 	    }
         stage('Git Checkout'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github access', url: 'https://github.com/bathinapavan063-blip/CI-CD-Automation-using-Jenkins-Freestyle-Pipelines.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github access', url: 'https://github.com/bathinapavan063-blip/End-to-End-CI-CD-Automation-using-Jenkins-Sripted-Pipeline.git']]])
             }
         }
         stage('build'){
